@@ -39,7 +39,9 @@ return [
     |
     */
 
-    'url' => 'http://localhost',
+    // 'url' => 'http://localhost',
+    // 'url' => 'http://foobooks.loc',
+    'url' => 'http://foobooks.shiweijuliahuang.me/',
 
     /*
     |--------------------------------------------------------------------------
