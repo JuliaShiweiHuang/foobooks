@@ -16,7 +16,9 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/book/{id}', 'BookController@getShow');
 
     Route::get('/practice', function() {
-        echo config('app.env');
+        echo 'app.url: '.config('app.url');
+        echo '<br>app.env: '.config('app.env');
+
         return '';
     });
 

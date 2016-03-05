@@ -41,7 +41,7 @@ return [
 
     // 'url' => 'http://localhost',
     // 'url' => 'http://foobooks.loc',
-    'url' => 'http://foobooks.shiweijuliahuang.me/',
+    'url' => env('APP_URL','http://foobooks.shiweijuliahuang.me/'),
 
     /*
     |--------------------------------------------------------------------------
