@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-
+use Faker\Factory;
 class BookController extends Controller {
 
     /**
@@ -40,4 +40,16 @@ class BookController extends Controller {
     public function postCreate() {
         return 'Add the book: '.$_POST['title'];
     }
+
+    public function getTest() {
+        $fake = new Factory;
+        $data = $fake->create();
+        $phone = $data->phoneNumber;
+        $address = $data->address;
+        echo $phone;
+        echo $address;
+
+    }
+
+
 }
